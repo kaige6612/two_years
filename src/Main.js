@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react'
 import $ from 'jquery'
-import url from './audio/gbqq.mp3' // 引入背景音乐文件
+import url from './audio/syst.mp3' // 引入背景音乐文件
 
 
 class Main extends Component {
@@ -13,11 +13,11 @@ class Main extends Component {
     componentDidMount() {
         this.print();
         setInterval(() => {
-            this.time(2016, 4, 23) // 你们的纪念日
+            this.time(1991, 2, 26) // 你们的纪念日
         }, 1000
         )
         var audio = document.getElementById("audio");
-        setTimeout(() => audio.play(), 8500) // 背景音乐在页面加载后，延迟播放的时长，单位：毫秒。
+        setTimeout(() => audio.play(), 3500) // 背景音乐在页面加载后，延迟播放的时长，单位：毫秒。
     }
     print = () => {
         $.fn.autotype = function () {
@@ -73,16 +73,16 @@ class Main extends Component {
             <div className="App animated bounceInLeft">
                 <div className="date">{date()}</div>
                 <div id="autotype">
-                    <h1 style={{ fontWeight: 900 }}>哈喽！wuli趴布猪！</h1>
-                    <p >在煽情开始之前，先放首歌当背景音乐吧！Music!</p>
-                    <p>今天是我们两周年的纪念日，从2016年4月23日到现在，我们一起经历了许许多多的事情，
+                    <h1 style={{ fontWeight: 900 }}>亲爱的！lulu！</h1>
+                    <p >你应该还在忙吧，来首歌放松下吧！Music!</p>
+                    <p>转眼又一年快要过去了，，
                     有欢笑也有争吵，也曾因为一些事情闹过分手，但是我们都走过来了。</p>
                     <p>高三那会，每天都期待着见到你，上课的时候视线会不自觉的到你身上；吃早餐帮你打好早餐，帮你洗早餐盒；
                         下课的时候假装凑到你身边看看你在干啥，有没有不会的题目，然后就可以教你做题，表面上是想展现
                         自己的学霸风采。实际上啊，是因为喜欢和你呆在一起。喜欢看你的甜美的笑容，喜欢轻轻地闻你的发香，
                         慢慢地开始喜欢你身上的一切。当从别人口中得知你喜欢我这句话时候，我那一整天都笑的合不拢嘴，晚上也睡不着，脑海里一直重复着那句话。
                 </p>
-                    <p>在4月23日那天晚上，在书店，我还记得清清楚楚，你穿着T恤和短裤，头发还散发着清香，我的心好像有什么感应一样，一靠近你就开始加速跳动。
+                    <p>在4月23日那天晚上，在书店，我还记得canvas清清楚楚，你穿着T恤和短裤，头发还散发着清香，我的心好像有什么感应一样，一靠近你就开始加速跳动。
                         在回去的路上，我正要说出“我喜欢你”这四个字的时候，你突然打断我说：“我也是！”。那一刻感觉时间都静止了，
                         整个人都处于一种飘飘然的状态。再到后来高考后的那个暑假，也是我一生当中最难忘的暑假，初吻、约会、每天都歪腻在一起，真心的感谢你陪我度过的那些时光。
                 </p>
@@ -95,8 +95,8 @@ class Main extends Component {
                 </p>
                     <p>最后祝wuli趴布猪两周年纪念日快乐哦！</p>
                     <div style={{ textAlign: 'right' }}>
-                        <p>爱你的♥魏锐</p>
-                        <p>2018年4月23日</p>
+                        <p>爱你的♥kai</p>
+                        <p>2020年12月25日</p>
                     </div>
                 </div>
                 <audio id="audio" src={url}></audio>

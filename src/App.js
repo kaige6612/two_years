@@ -23,7 +23,7 @@ class App extends Component {
             this.setState({ class: 'bounceOutRight', show: true })
           }} />
           <div className="triangle-up"></div>
-          <div className="text">你收到一封信，点击查收！</div>
+          <div className="text">犹豫啥呢，点开看看啊！</div>
         </div>
         {main()}
       </div>
